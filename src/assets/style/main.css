@@ -1,0 +1,64 @@
+.container-view {
+    height: 1080px;
+    width: 1920px;
+    background: url('@/assets/img/bg.png') no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content-box {
+    border: 1px solid #004e83 ;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.content-box-title {
+    color: #fff;
+    font-weight: bolder;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background: url('@/assets/img/bt-right.png') no-repeat;
+    background-position: center right;
+    border-bottom: 2px solid #4f5869;
+    position: relative;
+    padding-bottom: 5px;
+}
+.content-box-title::before {
+    content: '';
+    background: url('@/assets/img/bt-left.png') no-repeat;
+    height: 30px;
+    width: 30px;
+    display: block;
+    background-position: center;
+}
+.content-box-waper {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.min-title {
+    color: #00bbce;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.min-title::before {
+    content: '';
+    background: url('@/assets/img/min-title-left.png') no-repeat;
+    height: 50px;
+    width: 30px;
+    display: block;
+    background-position: center;
+}
+
+.content-box {
+    background-image: url('@/assets/img/bianjiao1.png'), url('@/assets/img/bianjiao2.png'), url('@/assets/img/bianjiao3.png'), url('@/assets/img/bianjiao4.png');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: top left, top right, bottom left, bottom right;
+}
